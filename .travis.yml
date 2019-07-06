@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t thouseefkm/docker-react -f Dockerfile.dev .
 script:
-  - docker run thouseefkm/docker-react npm run test -- --coverage
+  - docker run thouseefkm/docker-react npm run test --forceExit
